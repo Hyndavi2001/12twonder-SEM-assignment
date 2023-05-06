@@ -1,0 +1,25 @@
+# Define hypothetical personas of decision makers
+personas = {
+    "Persona A": ["enterprise software", "SaaS", "cloud computing"],
+    "Persona B": ["business intelligence", "data analysis", "dashboards"],
+    "Persona C": ["customer relationship management", "sales automation", "lead generation"]
+}
+
+# Define possible modifiers for each persona
+modifiers = {
+    "Persona A": ["best", "top", "affordable"],
+    "Persona B": ["easy", "powerful", "intuitive"],
+    "Persona C": ["automated", "customizable", "smart"]
+}
+
+# Generate keyword combinations for each persona
+keywords = []
+for persona, topics in personas.items():
+    for topic in topics:
+        for modifier in modifiers[persona]:
+            keyword = f"{modifier} {topic}"
+            keywords.append(keyword)
+
+# Print the generated keywords
+for keyword in keywords:
+    print(keyword)
